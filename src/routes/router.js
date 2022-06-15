@@ -1,6 +1,23 @@
 import {Router} from 'express';
 const router = Router();
-router.get('/', (req, res) => res.render('index')); //render index.ejs on / route
-router.get('/about-me', (req, res) => res.render('about-me')); //render index.ejs on / route
-router.get('/skills', (req, res) => res.render('skills')); //render index.ejs on / route
+let h1 = {
+    home: 'Home',
+    about: 'About me',
+    contact: 'Contact',
+    skills: 'Skills',
+}
+
+router.get('/', (req, res) => {
+    res.render(
+        'main',{h1:h1.home})
+}); //render index.ejs on / route
+router.get('/about-me', (req, res) => {
+    res.render(
+        'about-me',{h1:h1.about})
+}); //render index.ejs on / route
+router.get('/skills', (req, res) => {
+    res.render(
+        'skills',{h1:h1.skills})
+});
+ //render index.ejs on / route
 export default router;
