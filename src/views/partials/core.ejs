@@ -26,16 +26,77 @@
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 <style>
-footer {
-  position: fixed;
-  bottom: 1rem;
-  /* negative value of footer height */
-  height: 90px;
-  width: 100%;
-  clear: both;
-  align-items: center;
-  padding-left: 1rem;
-  background-color: rgb(80, 79, 79);
+    footer {
+    position: fixed;
+    bottom: 1rem;
+    /* negative value of footer height */
+    height: 90px;
+    width: 100%;
+    clear: both;
+    align-items: center;
+    padding-left: 1rem;
+    background-color: rgb(80, 79, 79);
+    }
+  
+    @keyframes colorized-text {
+  0%   {background-color: rgba(254, 0, 0);}
+  5%   {background-color: rgb(255, 64, 0);}
+  10%   {background-color: rgb(255, 174, 0);}
+  15%   {background-color: rgb(255, 208, 0);}
+  20%   {background-color: rgb(204, 255, 0);}
+  25%   {background-color: rgb(30, 255, 0);}
+  30%   {background-color: rgb(0, 255, 85);}
+  35%   {background-color: rgb(0, 255, 162)}
+  40%   {background-color: rgb(0, 247, 255);}
+  45%   {background-color: rgb(0, 110, 255);}
+  50%   {background-color: rgb(8, 0, 255);}
+  55%   {background-color: rgb(93, 0, 255);}
+  60%   {background-color: rgb(136, 0, 255);}
+  65%  {background-color: rgb(230, 0, 255);}
+  70%  {background-color: rgb(255, 0, 174);}
+  75% {background-color: rgb(128, 0, 83);}
+  80%   {background-color: rgb(135, 9, 9);}
+  85%   {background-color: rgb(144, 97, 2);}
+  90%   {background-color: rgb(36, 144, 131);}
+  95%   {background-color: rgb(255, 0, 208);}
+  100%   {background-color: rgb(248, 0, 0);}
+    }
+    body{
+        background: linear-gradient(108deg, #05001f, #2900a8, #836d9d, #fbdf98, #fbecc7);
+        background-size: 1000% 1000%;
+
+        -webkit-animation: gradientBackgroundWebKit 20s ease infinite;
+        -moz-animation: gradientBackgroundMoz 20s ease infinite;
+        -o-animation: gradientBackgroundOpera 20s ease infinite;
+        animation: gradientBackgroundKeyframes 20s ease infinite;
+    }
+
+@-webkit-keyframes gradientBackgroundWebKit {
+    0%{background-position:0% 44%}
+    50%{background-position:100% 57%}
+    100%{background-position:0% 44%}
+}
+@-moz-keyframes gradientBackgroundMoz {
+    0%{background-position:0% 44%}
+    50%{background-position:100% 57%}
+    100%{background-position:0% 44%}
+}
+@-o-keyframes gradientBackgroundOpera {
+    0%{background-position:0% 44%}
+    50%{background-position:100% 57%}
+    100%{background-position:0% 44%}
+}
+@keyframes gradientBackgroundKeyframes {
+    0%{background-position:0% 44%;
+        color:white}
+    25%{color:grey}
+    35%{color:darkslategray}
+    50%{background-position:100% 57%;
+        color:black;}
+    65%{color:darkslategray;}
+    75%{color:grey}
+    100%{background-position:0% 44%;
+        color:white}
 }
 
 </style>
