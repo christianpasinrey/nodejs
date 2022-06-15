@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-dark">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">CPR Creative</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,18 +21,27 @@
 </nav>
 <style>
   .navbar{
-  --bs-navbar-brand-hover-color:lightseagreen;
+    background-color: rgb(80, 79, 79);
+  --bs-navbar-brand-hover-color:lightsalmon;
   --bs-navbar-padding-y: 0px;
+  --bs-navbar-height: 5vh;
+  --bs-navbar-nav-link-padding-x: 3vh;
+  --bs-nav-link-padding-x: 2vh;
+    position:sticky;
+    height: 10vh;
   }
   .nav-link{
     color: #fff;
+    height: 10vh;
   }
   .nav-link:hover{
-    background-color: lightseagreen;
+    background-color: lightsalmon;
     color:black;
   }
   .navbar-brand{
     color: #fff;
+    padding-left: 6vh;
+    padding-right: 6vh;
   }
   .nav-brand:hover{
     color:white;
@@ -41,7 +50,7 @@
     background-color: white;
   }
   .navbar-toggler:hover{
-    background-color: lightseagreen;
+    background-color: lightsalmon;
     color:white;
   }
 </style>
