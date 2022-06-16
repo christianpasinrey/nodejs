@@ -1,23 +1,25 @@
 
 <% extend('partials/core') %>
+<div class="row m-2">
+    <div class="col-12">
+        <div class="form-check form-switch" style="position:absolute; right:30px;top:100px;">
+            <input class="form-check-input" style="color: #00C851;" type="checkbox" role="switch" id="turn-on-off" onclick="pauseAnimation()">
+        </div>
+        <script type="text/javascript">
+            function pauseAnimation(){
+                const running  = document.body.style.animationPlayState === 'running';
+                const switchBtn = document.getElementById('turn-on-off');
+                
+                document.body.style.animationPlayState = running ? 'paused' : 'running';
+                document.body.style.animationPlayState = running ? switchBtn.style.color = '#bdbdbd' : switchBtn.style.color = '#00C851';
+                document.body.style.animationPlayState = running ? switchBtn.textContent = 'TIME OFF' : switchBtn.textContent = 'TIME ON';
+            }
+        </script>
+    </div>
+</div>
 <div class="row flex text-center" style="margin-top:50px;">
     <div class="col-lg-6 col-md-12 col-sm-12 offset-lg-3">
         <h2 class="text-uppercase" style="text-align:center">Welcome!!</h2>
         <small id="welcome-message">This web-site is made with:<br> Effort + Passion + Persistence + Knowledge + Practice + StackOverflow</small>
-    </div>
-</div>
-<div class="row text-center m-4">
-    <div class="col">
-        <button class="btn btn-sm" style="background-color: #00C851;" id="state-button" onclick="pauseAnimation()">TIME ON</button>
-        <script type="text/javascript">
-            function pauseAnimation(){
-                const running  = document.body.style.animationPlayState === 'running';
-                const btn = document.querySelector('#state-button');
-                
-                document.body.style.animationPlayState = running ? 'paused' : 'running';
-                document.body.style.animationPlayState = running ? btn.style.backgroundColor = '#bdbdbd' : btn.style.backgroundColor = '#00C851';
-                document.body.style.animationPlayState = running ? btn.textContent = 'TIME OFF' : btn.textContent = 'TIME ON';
-            }
-        </script>
     </div>
 </div>
