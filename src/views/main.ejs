@@ -2,8 +2,21 @@
 <% extend('partials/core') %>
 <div class="row flex text-center">
     <div class="col-lg-6 col-md-12 col-sm-12 offset-lg-3">
-        <canvas id="canvas"></canvas>
         <h1 class="text-uppercase" style="text-align:center">Home</h1>
+    </div>
+</div>
+<div class="row text-center">
+    <div class="col">
+        <button class="btn btn-sm" style="background-color: #00C851;" id="state-button" onclick="pauseAnimation()">TIME ON</button>
+        <script type="text/javascript">
+            function pauseAnimation(){
+                const running  = document.body.style.animationPlayState === 'running';
+                const btn = document.querySelector('#state-button');
+                document.body.style.animationPlayState = running ? 'paused' : 'running';
+                document.body.style.animationPlayState = running ? btn.style.backgroundColor = '#bdbdbd' : btn.style.backgroundColor = '#00C851';
+                document.body.style.animationPlayState = running ? btn.textContent = 'TIME OFF' : btn.textContent = 'TIME ON';
+            }
+        </script>
     </div>
 </div>
 <!-- <ins id="kaD7jXqp" data-theme="chathispanoPor defecto" data-autojoin="true"></ins><script src="https://chathispano.com/assets/webchat/js/embed.min.js"></script> -->
