@@ -37,7 +37,6 @@
     padding-left: 1rem;
     background-color: rgb(80, 79, 79);
     }
-  
     @keyframes colorized-text {
   0%   {background-color: rgba(254, 0, 0);}
   5%   {background-color: rgb(255, 64, 0);}
@@ -64,40 +63,37 @@
     body{
         background: linear-gradient(108deg, #05001f, #2900a8, #836d9d, #fbdf98, #fbecc7);
         background-size: 1000% 1000%;
-
         -webkit-animation: gradientBackgroundWebKit 20s ease infinite;
         -moz-animation: gradientBackgroundMoz 20s ease infinite;
         -o-animation: gradientBackgroundOpera 20s ease infinite;
         animation: gradientBackgroundKeyframes 20s ease infinite;
     }
-
-@-webkit-keyframes gradientBackgroundWebKit {
-    0%{background-position:0% 44%}
-    50%{background-position:100% 57%}
-    100%{background-position:0% 44%}
-}
-@-moz-keyframes gradientBackgroundMoz {
-    0%{background-position:0% 44%}
-    50%{background-position:100% 57%}
-    100%{background-position:0% 44%}
-}
-@-o-keyframes gradientBackgroundOpera {
-    0%{background-position:0% 44%}
-    50%{background-position:100% 57%}
-    100%{background-position:0% 44%}
-}
-@keyframes gradientBackgroundKeyframes {
-    0%{background-position:0% 44%;
-        color:white}
-    25%{color:grey}
-    35%{color:darkslategray}
-    50%{background-position:100% 57%;
-        color:black;}
-    65%{color:darkslategray;}
-    75%{color:grey}
-    100%{background-position:0% 44%;
-        color:white}
-}
-
+    @-webkit-keyframes gradientBackgroundWebKit {
+        0%{background-position:0% 44%}
+        50%{background-position:100% 57%}
+        100%{background-position:0% 44%}
+    }
+    @-moz-keyframes gradientBackgroundMoz {
+        0%{background-position:0% 44%}
+        50%{background-position:100% 57%}
+        100%{background-position:0% 44%}
+    }
+    @-o-keyframes gradientBackgroundOpera {
+        0%{background-position:0% 44%}
+        50%{background-position:100% 57%}
+        100%{background-position:0% 44%}
+    }
+    @keyframes gradientBackgroundKeyframes {
+        0%{background-position:0% 44%;
+            color:white}
+        25%{color:grey}
+        35%{color:darkslategray}
+        50%{background-position:100% 57%;
+            color:black;}
+        65%{color:darkslategray;}
+        75%{color:grey}
+        100%{background-position:0% 44%;
+            color:white}
+    }
 </style>
 </html>
