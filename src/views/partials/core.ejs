@@ -7,36 +7,26 @@
     <title><%= h1 %> - Christian Pasín Rey - NodeJs Portfolio</title>
 </head>
 <body>
-    <main>
+    <main id="app">
         <%- include('navigation') %>
-        <div class="container fluid mt-5">
+        <div class="container fluid mt-5 pt-5">
             <%- content %>
         </div>
+        <%- include('footer') %>
     </main>
-    <%- include('footer') %>
     <script>
         const height = window.innerHeight;
         function adjustHeigh(value){
-            return document.body.style.minHeight = value;
+            const app = document.getElementById('app');
+            return app.style.minHeight = value + 'px;';
         }
-        adjustHeigh(height + 'px');
+        adjustHeigh(height);
     </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 <style>
-    footer {
-    position: fixed;
-    bottom: 1rem;
-    /* negative value of footer height */
-    height: 90px;
-    width: 100%;
-    clear: both;
-    align-items: center;
-    padding-left: 1rem;
-    background-color: rgb(80, 79, 79);
-    }
     @keyframes colorized-text {
   0%   {background-color: rgba(254, 0, 0);}
   5%   {background-color: rgb(255, 64, 0);}
@@ -94,6 +84,14 @@
         75%{color:grey}
         100%{background-position:0% 44%;
             color:white}
+    }
+    .paused {
+        animation-play-state: paused;
+    }
+    small{
+        animation-name: gradientBackgroundKeyframes;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
     }
 </style>
 </html>
