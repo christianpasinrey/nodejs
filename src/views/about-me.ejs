@@ -1,6 +1,72 @@
 <% extend('partials/core') %>
-<div class="row flex text-center">
-    <div class="col-lg-6 col-md-12 col-sm-12 offset-lg-3">
-        <h1 class="text-uppercase" style="text-align:center">Welcome</h1>
+<div class="row flex mt-5">
+    <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-uppercase" style="text-align:start">Christian Pasín Rey</h1>
+                <small class="text-uppercase" style="text-align:start"><%= h1 %></small>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="card" size="lg">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <div id="personal-gallery" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <picture>
+                                    <source type="image/webp" 
+                                     srcset="/img/html5.webp 600w, /img/html5.webp 300w, /img/html5.webp 250w, /img/html5.webp 1200w" 
+                                     sizes="(max-width:768px) 93vw, (max-width: 975px) 59vw, 600px" />
+                                    <img width="600" height="339" 
+                                     src="/img/img1200x678.jpg" 
+                                     srcset="/img/html5.jpg 600w, /img/html5.jpg 300w, /img/html5.jpg 250w, /img/html5.jpg 1200w" 
+                                     sizes="(max-width:768px) 93vw, (max-width: 975px) 59vw, 600px" 
+                                     alt="HTML5 knowledge" 
+                                     loading="lazy" />
+                                </picture>
+                              </div>
+                              <div class="carousel-item">
+                                <picture>
+                                    <source type="image/webp" 
+                                     srcset="/img/mysql.webp 600w, /img/mysql.webp 300w, /img/mysql.webp 250w, /img/mysql.webp 1200w" 
+                                     sizes="(max-width:768px) 93vw, (max-width: 975px) 59vw, 600px" />
+                                    <img width="600" height="339" 
+                                     src="/img/img1200x678.jpg" 
+                                     srcset="/img/mysql.jpg 600w, /img/mysql.jpg 300w, /img/mysql.jpg 250w, /img/mysql.jpg 1200w" 
+                                     sizes="(max-width:768px) 93vw, (max-width: 975px) 59vw, 600px" 
+                                     alt="HTML5 knowledge" 
+                                     loading="lazy" />
+                                </picture>
+                              </div>
+                              <div class="carousel-item">
+                                <picture>
+                                    <source type="image/webp" 
+                                     srcset="/img/php.webp 600w, /img/php.webp 300w, /img/php.webp 250w, /img/php.webp 1200w" 
+                                     sizes="(max-width:768px) 93vw, (max-width: 975px) 59vw, 600px" />
+                                    <img width="600" height="339" 
+                                     src="/img/img1200x678.jpg" 
+                                     srcset="/img/php.jpg 600w, /img/php.jpg 300w, /img/php.jpg 250w, /img/php.jpg 1200w" 
+                                     sizes="(max-width:768px) 93vw, (max-width: 975px) 59vw, 600px" 
+                                     alt="HTML5 knowledge" 
+                                     loading="lazy" />
+                                </picture>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#personal-gallery" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#personal-gallery" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
