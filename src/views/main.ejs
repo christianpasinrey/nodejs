@@ -1,24 +1,71 @@
 
 <% extend('partials/core') %>
-<div class="row m-2">
-    <div class="col-12">
-        <div class="form-check form-switch" style="position:absolute; right:30px;top:100px;">
-            <input class="form-check-input" style="color: #00C851;" type="checkbox" role="switch" id="swap-contrast" onclick="switchContrast()">
-        </div>
-        <script type="text/javascript">
-            function switchContrast(){
-                if (document.body.classList.contains('dark-theme')) {
-                    document.body.classList.toggle("light-theme");
-                } else {
-                    document.body.classList.toggle("dark-theme");
-                }
-            }
-        </script>
-    </div>
-</div>
 <div class="row flex text-center" style="margin-top:50px;">
     <div class="col-lg-6 col-md-12 col-sm-12 offset-lg-3">
         <h2 class="text-uppercase" style="text-align:center">Welcome!!</h2>
         <small id="welcome-message">This web-site is made with:<br> Effort + Passion + Persistence + Knowledge + Practice + StackOverflow</small>
+    </div>
+</div>
+<div class="row flex text-center" style="margin-top:50px;">
+    <div class="col-lg-6 offset-lg-3 col-md-12 col-sm-12">
+        <div class="card" size="lg">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <div id="personal-gallery" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <picture>
+                                    <source type="image/webp" 
+                                     srcset="/img/html5.webp 600w, /img/html5.webp 300w, /img/html5.webp 250w, /img/html5.webp 1200w" 
+                                     sizes="(max-width:768px) 93vw, (max-width: 975px) 59vw, 600px" />
+                                    <img width="500" 
+                                     src="/img/img1200x678.jpg" 
+                                     srcset="/img/html5.jpg 600w, /img/html5.jpg 300w, /img/html5.jpg 250w, /img/html5.jpg 1200w" 
+                                     sizes="(max-width:768px) 93vw, (max-width: 975px) 59vw, 600px" 
+                                     alt="HTML5 knowledge" 
+                                     loading="lazy" />
+                                </picture>
+                              </div>
+                              <div class="carousel-item">
+                                <picture>
+                                    <source type="image/webp" 
+                                     srcset="/img/mysql.webp 600w, /img/mysql.webp 300w, /img/mysql.webp 250w, /img/mysql.webp 1200w" 
+                                     sizes="(max-width:768px) 93vw, (max-width: 975px) 59vw, 600px" />
+                                    <img width="500" 
+                                     src="/img/img1200x678.jpg" 
+                                     srcset="/img/mysql.jpg 600w, /img/mysql.jpg 300w, /img/mysql.jpg 250w, /img/mysql.jpg 1200w" 
+                                     sizes="(max-width:768px) 93vw, (max-width: 975px) 59vw, 600px" 
+                                     alt="HTML5 knowledge" 
+                                     loading="lazy" />
+                                </picture>
+                              </div>
+                              <div class="carousel-item">
+                                <picture>
+                                    <source type="image/webp" 
+                                     srcset="/img/php.webp 600w, /img/php.webp 300w, /img/php.webp 250w, /img/php.webp 1200w" 
+                                     sizes="(max-width:768px) 93vw, (max-width: 975px) 59vw, 600px" />
+                                    <img width="500" 
+                                     src="/img/img1200x678.jpg" 
+                                     srcset="/img/php.jpg 600w, /img/php.jpg 300w, /img/php.jpg 250w, /img/php.jpg 1200w" 
+                                     sizes="(max-width:768px) 93vw, (max-width: 975px) 59vw, 600px" 
+                                     alt="HTML5 knowledge" 
+                                     loading="lazy" />
+                                </picture>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#personal-gallery" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#personal-gallery" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

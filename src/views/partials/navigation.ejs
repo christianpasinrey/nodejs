@@ -1,27 +1,29 @@
-<nav class="navbar navbar-expand-lg shine">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">CPR Creative</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a  class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/blog">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about-me">About me</a>
-        </li>
-      </ul>
+<header>
+  <nav class="navbar navbar-expand-lg shine">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">CPR Creative</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a  class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about-me">About me</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 <style>
   .navbar{
     background-color: #111;;
@@ -30,8 +32,8 @@
   --bs-navbar-height: 4vh;
   --bs-navbar-nav-link-padding-x: 3vh;
   --bs-nav-link-padding-x: 2vh;
-    position:fixed;
-    width:100%;
+    position:sticky;
+    z-index:1;
     top:0%;
     height: 6vh;
     box-shadow: 0px 0px 100px 10px rgb(229, 231, 231);
@@ -39,7 +41,7 @@
   a.nav-link{
     color: #fff;
     height: 6vh;
-    padding-top:0.9vw
+    padding-top:0.8vw
   }
   .nav-link:hover{
     background-color: lightsalmon;
