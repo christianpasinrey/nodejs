@@ -1,10 +1,21 @@
 <footer>
-    <div class="link-container fluid">
+    <div class="link-container fluid footer-container">
         <a class="footer-link" href="/"">Home</a>
         <a class="footer-link" href="/about-me"">About me</a>
+        <img src="/img/www-logo.png" width="35px" alt="Wordpress project" onclick="go()" id="link-laguia">
         <a class="footer-link" href="/skills"">Skills</a>
+        <a class="footer-link" href="/skills"">Blog</a>
     </div>
 </footer>
+<script type="text/javascript">
+    function go(){
+        var anchor = document.createElement('a');
+        anchor.style.display = 'none';
+        anchor.href = 'https://www.laguiadelcafe.com';
+        document.body.appendChild(anchor);
+        anchor.click();
+    }
+</script>
 <style>
     footer {
         height: 60px;
@@ -15,12 +26,19 @@
         position: absolute;
         bottom:0px;
     }
-    .footer-link{
+    #link-laguia:hover{
+        cursor: pointer;
+    }
+    a.footer-link{
         color:white;
         padding-right: 2rem;
-        padding-left: 2rem
+        padding-left: 2rem;
     }
-    .footer-link:hover{
+    .footer-container{
+        padding-top: 0.7vw;
+        padding-left: 35vw
+    }
+    a.footer-link:hover{
         color:lightseagreen
     }
     a:link { text-decoration: none; }

@@ -5,6 +5,7 @@ let h1 = {
     about: 'About me',
     contact: 'Contact',
     skills: 'Skills',
+    blog: 'Blog',
 }
 
 router.get('/', (req, res) => {
@@ -18,6 +19,10 @@ router.get('/about-me', (req, res) => {
 router.get('/skills', (req, res) => {
     res.render(
         'skills',{h1:h1.skills})
+});
+router.get('/blog', (req, res) => {
+    res.render(
+        'blog',{h1:h1.blog})
 });
  //render index.ejs on / route
 export default router;
